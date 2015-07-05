@@ -75,7 +75,8 @@ unsigned int rcry_generateKey(ree_crypto_t ctype, byte **key)
 	if (ctype == RCRY_RIJNDAEL)
 	{
 		(*key) = (byte*) malloc(AES::MAX_KEYLENGTH);
-		prng.GenerateBlock((*key), sizeof((*key)));
+		cout << "Key size: " << AES::MAX_KEYLENGTH << endl;
+		prng.GenerateBlock((*key), 32);
 	}
 	else if (ctype == RCRY_TWOFISH)
 	{

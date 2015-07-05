@@ -56,7 +56,7 @@ extern "C"
 #include "../file_handle.h"
 }
 
-#include "bench.hpp";
+//#include "bench.hpp";
 
 int main(int argc, char* argv[])
 {
@@ -65,9 +65,11 @@ int main(int argc, char* argv[])
 
 	string encoded;
 	encoded.clear();
-	StringSource(key, sizeof(key), true, new HexEncoder(new StringSink(encoded)) // HexEncoder
-			);// StringSource
+
+	StringSource(key, strlen((char*) key), true, new HexEncoder(new StringSink(encoded)));
+
 	cout << "key: " << encoded << endl;
+	cout << "length: " << strlen((char*) key) << endl;
 
 	rcry_cryptoInit(RCRY_RIJNDAEL, &key);
 
