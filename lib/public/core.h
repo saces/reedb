@@ -21,6 +21,8 @@
  * @author: Katharina 'spacekookie' Sabel <sabel.katharina@gmail.com>
  */
 
+ #include <stdbool.h>
+
 typedef enum ree_os 
 {
 	LINUX 		= 0xE1, /* Linux systems */
@@ -86,8 +88,14 @@ typedef struct ree_icontainer
 
 } ree_icontainer;
 
-/** Boolean that represents the state of the core module */
-static bool active;
+/** Some global variables that are required for the core module to function */
+
+extern bool active;
+extern bool daemon;
+extern ree_os core_os;
+extern unsigned int pw_length;
+extern bool verbose;
+extern bool no_token;
 
 /**
  * Initialise Reedb with a set of parameters passed into this method.

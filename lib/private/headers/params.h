@@ -1,0 +1,11 @@
+#ifndef PARAMS_H_
+#define PARAMS_H_
+
+int REE_ERR_MISSING_PARAMS = 0xA0;
+int REE_ERR_MISSING_USRCODE = 0xA1;
+// int REE_ERR_MISSING_PARAMS = 0xA2;
+// int REE_ERR_MISSING_PARAMS = 0xA3;
+// int REE_ERR_MISSING_PARAMS = 0xA4;
+
+
+#endif /* PARAMS_H_ */

@@ -1,2 +1,4 @@
 
-#define Reedb_VERSION_MAJOR @Reedb_VERSION_MAJOR@
+#define REEDB_V_MAJOR @Reedb_VERSION_MAJOR@
+#define REEDB_V_MINOR @Reedb_VERSION_MINOR@
+#define REEDB_V_PATCH @Reedb_VERSION_PATCH@

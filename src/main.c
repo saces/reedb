@@ -1,8 +1,14 @@
-// #include "reedb/core.h"
+#include <stdbool.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 int main()
 {
-	printf("Hello yo!");
+	bool something;
+	if(something == NULL)
+
+	bool mine = something;
+	fputs(mine ? "true" : "false", stdout);
+
 	return 0;
 }
